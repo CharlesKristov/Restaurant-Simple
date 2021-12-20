@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAM DINNER</title>
+    <link rel="stylesheet" href="styles\style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="headerkiri">
+            <a href="index.html"><img src="images/logo.svg" alt="logofamdiner"></a>
+        </div>
+        <div class="headerkanan">
+            <a href="register.html"><h2>REGISTER</h2></a>
+            <a href="login.html"><h2>LOGIN</h2></a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navbarmenu">
+            
+            <a href="" class="active"><h3>HOME</h3></a>
+            <div class="dropdown">
+                <a href="menu.html" class="dropdownmenu">
+                    <h3>MENU
+                       
+                    </h3></a>
+
+                <div class="dropdownisi">
+                    <a href="">BURGER</a>
+                    <a href="">RICE & PASTA</a>
+                    <a href="">SEAFOOD</a>
+                </div>
+            </div>
+            <a href="aboutus.html" class=""><h3>ABOUT US</h3></a>
+        </div>
+    </div>
+
+   
+    <div class="Regis">
+        <h1>Register</h1>
+        <form action="login.html" method="get" class="RegisterFormClass">
+            <div class="registerbox">
+                <h3>Name: </h3>
+                <br>
+                <input type="text" id="regisNama">
+                <br>
+                <h3>Email: </h3>
+                <br>
+                <input type="text" id="regisEmail">
+                <br>
+                <h3>Gender: </h3>
+                <input type="radio" name="Gender" id="male"> <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="female"> <label for="Female">Female</label>
+                <h3>City: </h3>
+                <br>
+                <select name="City" id="city">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Malang">Malang</option>
+                </select>
+
+                <h3>Password: </h3>
+                <input type="password" name="Password" id="RegPassword">
+
+                <h3>Confirm Password: </h3>
+                <input type="password" name="Password" id="ConPassword">
+            </div>
+
+            <button class="classbutton" type="submit">Register</button>
+            </form>
+    </div>
+  
+    
+
+
+    <div class="footer">
+        <div class="logo">
+            <a href="https://twitter.com/"target="_blank"> <img src="images/twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/"target="_blank"> <img src="images/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/"target="_blank"> <img src="images/instagram.png" alt=""></a>
+        </div>
+        <p>Copyright © 2021 Charles Christopher. All Rights Reserved</p>
+    </div>
+    <script src="scripts\RegisterJS.js"></script>
+</body>
+</html>

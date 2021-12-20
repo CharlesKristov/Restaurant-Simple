@@ -1,0 +1,475 @@
+*{
+    margin:0;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header{
+    background-image: linear-gradient(to bottom right, #1e273d,#586a9c);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.headerkanan{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.headerkiri img{
+    display: flex;
+    width: 200px;
+    margin: 0%;
+}
+
+.headerkanan h2{
+    background-color: black;
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    border-radius: 30px;
+}
+
+.navbar{
+    background-color: black;
+    margin: 0;
+}
+
+
+.navbarmenu{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbarmenu a{
+    color: white;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    border: none;
+}
+
+
+.navbarmenu a:hover{
+    background-color: lightblue;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownmenu{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: flex;
+}
+
+.arrowbawah{
+    display: flex;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+}
+
+.dropdownisi{
+    display: none;
+    position: absolute;
+    background-color: dimgray;
+    z-index: 1;
+}
+
+.dropdownisi a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdownisi a:hover {background-color: lightblue}
+
+.dropdown:hover .dropdownisi {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: lightblue;
+}
+
+.active{
+    background-color: lightblue;
+    margin: 0;
+}
+.blackopac{
+    background-color: #000;
+    position: relative;
+}
+
+.blackopac::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background-image: url("/images/background_home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.contentjudul{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.contentjudul button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.button{
+    cursor: pointer;
+}
+
+
+.logincontent{
+    text-align: center;
+}
+
+
+.loginbox{
+    text-align: center;
+    display: block;
+}
+
+.loginbox form{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.kotakLogin {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.kotakLogin input{
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+
+.kotakLogin input[type=password]{
+    border: none;
+    width: auto;
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+
+.kotakLogin label{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.buttonindex{
+    cursor: pointer;
+}
+
+.classbutton{
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 130px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.logincontent{
+    margin: 20px;
+    margin-bottom: 380px;
+}
+
+.Regis{
+    text-align: center;
+    padding-top: 40px;
+    height: 700px;
+}
+
+.registerbox{
+    background-color: white;
+    text-align: left;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+.registerbox input[type=text],[type=password]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.registerbox input[type=radio]{
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+
+.registerbox select{
+    width: 700px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.registerbox textarea{
+    width: 700px;
+    height: 60px;
+}
+
+.blackopac2{
+    background-color: #000;
+    position: relative;
+}
+
+.blackopac2::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background-image: url(/images/background_menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.judulmenu{
+    color:white;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 70%;
+}
+
+.judulmenu h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.judulmenu p{
+    font-size: 16px;
+}
+
+.burgerlist{
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    width: 70%;
+    margin: 50px auto;
+}
+
+
+
+.burgerset{
+    background-color: white;
+    width: 150px;
+    height: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+
+.burgerimg img{
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+.burgertext{
+    color: black;
+}
+
+.mostpopular{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    color: white;
+    background-color: orange;
+    border-radius: 0 0 20px 20px;
+    padding: 5px;
+}
+
+
+
+
+.aboutus{
+    background-color: black;
+    height: 700px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.judulabout{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    
+}
+
+.teksaboutus{
+    margin-top: 20px;
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.contact{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 300px;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+}
+
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer .logo{
+    text-align: center;
+}
+
+.logo img{
+    margin: 10px;
+}
+
+.footer p{
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .burgerlist{
+        display: block;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border: none;
+        width: 25%;
+        margin: 50px auto;
+    }
+
+    .menu {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+    }
+
+    .burgerset {
+        background-color: white;
+        width: 150px;
+        height: 200px;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Regis {
+        text-align: center;
+        padding-top: 40px;
+        height: 700px;
+        margin: 20px;
+    }
+
+    .registerbox input[type=text], [type=password] {
+        border: none;
+        border-bottom: 1px solid black;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .registerbox select {
+        width: 500px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+}
